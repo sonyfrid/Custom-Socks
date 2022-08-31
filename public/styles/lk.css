@@ -1,0 +1,19 @@
+@import url("//db.onlinewebfonts.com/c/2deeacfe07ac4fc511a20052e1566d32?family=Kosko+Regular");
+body{
+    background-image: url(https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/105896581/original/f4c6d3ae884173faa6aa17e9201ab37bf8ca7eff/do-some-logotype-or-text-with-different-animations.jpg);
+}
+
+/* .navbar-expand-lg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.container-fluid{
+    width: 0%
+}

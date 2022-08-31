@@ -1,0 +1,138 @@
+<link rel="stylesheet" href="/styles/constructor.css" type="text/css" />
+<link rel="stylesheet" href="/styles/normalize.css" type="text/css"/>
+{{!-- <h1>Это конструктор</h1>
+
+<form method="post" action="/constructor">
+<div> ПРИВЕТ!</div>
+<div><img src="" alt="фото"></div> --}}
+
+
+
+
+  
+
+
+
+
+{{!-- <h3>Выбери цвет:</h3>
+          <div class="form-check color-choose">
+            <span data-id="1" class="color color_white">
+              <input class="form-check-input" type="radio" name="color" id="color1" checked>
+              <label class="form-check-label" for="color1">white</label>
+            </span> --}}
+            {{!-- {{#each colors}} --}}
+            {{!-- <span data-id="{{id}}" class="color color_{{color}}">
+              <input class="form-check-input" type="radio" name="color" id="color{{id}}">
+              <label style="background-color: {{hex}}" class="form-check-label" for="color{{id}}">{{color}}</label>
+            </span> --}}
+            {{!-- {{/each}} --}}
+          {{!-- </div>
+
+
+
+</form> --}}
+
+{{!-- <img src="/public/img/socks.png" alt="фото"> --}}
+
+
+<div class="row g-3 content">
+  <h2 class="mb-3 font align-self-center">Создай себе носок!</h2>
+  <div class="col-12 mb-6 generator-content">
+    {{!-- ОТОБРАЖЕНИЕ НОСКА --}}
+      <div class="col-6 socks-output-container">
+        <div id="sock">
+          <div id="sock-color"></div>
+          <div id="sock-pictures"></div>
+          <div id="sock-prints"></div>
+          <div id="sock-constructor"></div>
+        </div>
+      </div>
+      <div class="col-6 socks-form">
+      <form class='sock-form' name='constructor' method='post' action='/constructor'>
+        {{!-- ЦВЕТ --}}
+        {{!-- <h3>Выбери цвет:</h3>
+          <div class="form-check color-choose">
+            <span data-id="1" class="color color_white">
+              <input class="form-check-input" type="radio" name="color" id="color1" checked>
+              <label class="form-check-label" for="color1">white</label>
+            </span>
+            {{#each colors}}
+            <span data-id="{{id}}" class="color color_{{color}}">
+              <input class="form-check-input" type="radio" name="color" id="color{{id}}">
+              <label style="background-color: {{hex}}" class="form-check-label" for="color{{id}}">{{this.color}}</label>
+            </span>
+            {{/each}}
+          </div> --}}
+          УЗОР
+          <h3>Выбери узор:</h3>
+          <div class="form-check prints-form">
+            <p data-id="1" class="prints prints_(нет)">
+              <input class="form-check-input" type="radio" name="prints" id="prints{{id}}" checked>
+              <label class="form-check-label" for="prints1">(нет)</label>
+            </p>
+            {{#each prints}}
+            <p data-id="{{id}}" class="prints prints_{{prints_name}}">
+              <input class="form-check-input" type="radio" name="prints" id="prints{{id}}">
+              <label class="form-check-label" for="prints{{id}}">{{prints_name}}</label>
+            </p>
+            {{/each}}
+          </div>
+          {{!-- КАРТИНКА --}}
+          <h3>Выбери картинку:</h3>
+          <div class="form-check pictures-form">
+            <p data-id="1" class="pictures pictures_(нет)">
+              <input class="form-check-input" type="radio" name="pic" id="pic1" checked>
+              <label class="form-check-label" for="pic{{id}}">(нет)</label>
+            </p>
+            {{#each pictures}}
+            <p data-id="{{id}}" class="pictures pictures_{{pic_name}}">
+              <input class="form-check-input" type="radio" name="pic" id="pic{{id}}">
+              <label class="form-check-label" for="pic{{id}}">{{pic_name}}</label>
+            </p>
+            {{/each}}
+          </div>
+          
+          <button href="/orders" type="button" class="btn btn-outline-dark">Добавить в корзину</button>
+
+          
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{{!-- <script src="/js/generator.js"></script> --}}
+{{!-- <script src="/js/addCombo.js"></script> --}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {{!-- <label for="title-input" class="block mar-b-1">Title:</label>
+  <input id="title-input" name="title" type="text" value="{{entry.title}}" tabindex="1"
+    class="block w-100 no-outline no-border pad-1 mar-b-2">
+
+  <label for="body-textarea" class="block mar-b-1">Body:</label>
+  <textarea id="body-textarea" name="body" tabindex="2"
+    class="block w-100 h-10 no-resize no-outline no-border no-resize pad-1 mar-b-2">{{entry.body}}</textarea>
+
+  <input type="submit" value="Publish" tabindex="3"
+    class="block button w-100 mar-t-4 mar-b-3 pad-2 round-1 text-c center no-border no-outline"> --}}
+
+
+
+          {{!-- <div class="constructor-buttons">
+            <button type='button' class="addToFavorite col-4 btn btn-lg btn-secondary mt-3"><span class="material-symbols-outlined addToFavorite">bookmark_add</span><span class="addToFavorite">В избранное</span></button>
+            <button type='submit' class="addToCart col-4 btn btn-lg btn-primary mt-3"><span class="material-symbols-outlined addToCart">shopping_basket</span><span class="addToCart">В корзину</span></button>
+          </div> --}}
+
+          

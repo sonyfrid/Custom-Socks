@@ -1,0 +1,53 @@
+  <link rel="stylesheet" href="/styles/background.css" type="text/css" />
+   
+<div class ='box'><div><ul class='nav nav-tabs mt-3' id='myTab' role='tablist'>
+  <li class='nav-item' role='presentation'>
+    <button class='nav-link active' id='home-tab' data-bs-toggle='tab' data-bs-target='#home-tab-pane' type='button'
+      role='tab' aria-controls='home-tab-pane' aria-selected='true'>Регистрация</button>
+  </li>
+  <li class='nav-item' role='presentation'>
+    <button class='nav-link' id='profile-tab' data-bs-toggle='tab' data-bs-target='#profile-tab-pane' type='button'
+      role='tab' aria-controls='profile-tab-pane' aria-selected='false'>Вход</button>
+  </li>
+</ul>
+<div class='tab-content' id='myTabContent'>
+  <div class='tab-pane fade show active' id='home-tab-pane' role='tabpanel' aria-labelledby='home-tab' tabindex='0'>
+    <form action='/signup' method='post'>
+      <div class='mb-3'>
+        <label for='exampleName' class='form-label'>Имя</label>
+        <input name='name' type='text' class='form-control' id='exampleName' />
+      </div>
+      <div class='mb-3'>
+        <label for='exampleName' class='form-label'>Почта</label>
+        <input name='email' type='email' class='form-control' id='exampleName' />
+      </div>
+      <div class='mb-3'>
+        <label for='exampleInputPassword1' class='form-label'>Пароль</label>
+        <input name='password' type='password' class='form-control' id='exampleInputPassword1' />
+      </div>
+      <div class='row w-25'>
+
+
+
+      </div>
+      <button type='submit' class='btn btn-dark'>Зарегистрироваться</button>
+    </form>
+
+  </div>
+  <div class='tab-pane fade' id='profile-tab-pane' role='tabpanel' aria-labelledby='profile-tab' tabindex='0'>
+    <form action='/signin' method='post'>
+      <div class='mb-3'>
+        <label for='exampleName' class='form-label'>Имя</label>
+        <input name='name' type='text' class='form-control' id='exampleName' />
+      </div>
+      <div class='mb-3'>
+        <label for='exampleInputPassword1' class='form-label'>Пароль</label>
+        <input name='password' type='password' class='form-control' id='exampleInputPassword1' />
+      </div>
+      <button type='submit' class='btn btn-dark'>Войти</button>
+    </form>
+  </div>
+</div>
+</div>
+</div>
+<div><h1 class="title_s" align="center">Some books</h1></div>

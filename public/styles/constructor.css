@@ -1,0 +1,303 @@
+@import url("//db.onlinewebfonts.com/c/2deeacfe07ac4fc511a20052e1566d32?family=Kosko+Regular");
+
+body {
+  
+}
+
+a,
+button,
+h1,
+h2,
+h3 {
+  font-family: "Kosko Regular", sans-serif !important;
+}
+
+.navbar {
+  box-shadow: rgba(50, 50, 93, 0.2) 0px 10px 20px -5px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  margin-bottom: 2rem;
+}
+
+.container-fluid {
+  max-width: 1296px;
+}
+
+.row {
+  justify-content: space-around;
+}
+
+.container-center {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar-collapse {
+  width: 100%;
+}
+
+.nav-part .nav-link,
+.nav-part .nav-buttons,
+.nav-part .nav-buttons .btn {
+  display: flex;
+}
+
+.nav-part .nav-buttons .btn {
+  margin-left: 0.5rem;
+  padding-right: 16px;
+}
+
+.navbar-collapse .navbar-nav .nav-part .nav-link:hover {
+  color: #999999;
+  transition: all 0.2s;
+}
+
+.navbar-nav .nav-part .nav-link.profile:hover {
+  color: rgba(0, 0, 0, 0.55);
+  cursor: default;
+}
+
+.nav-part .material-symbols-outlined {
+  margin-right: 0.2rem;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-part {
+  display: flex !important;
+  flex-direction: row;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #461ca7;
+}
+
+p {
+  margin-bottom: 0px !important;
+}
+
+.content {
+  justify-content: center;
+}
+
+/* НОСКОГЕНЕРАТОР */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.generator-content {
+  display: flex;
+}
+
+.sock-form .form-check {
+  margin-bottom: 1rem;
+}
+
+.generator-buttons {
+  display: flex;
+}
+
+.generator-buttons .btn .material-symbols-outlined {
+  margin-right: 0.3rem;
+}
+
+.generator-buttons .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+#sock {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+#sock > *,
+.card-img > * {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+#sock-prints {
+  /* background-image: url("/img/print1.png"); */
+  background-image:
+}
+
+#sock-pictures {
+  background-image: 
+  /* background-image: url("/img/picture1.png"); */
+}
+
+
+#sock-constructor,
+.sock-constructor {
+  background-image: url("/img/maket.png");
+}
+
+/* ОТОБРАЖЕНИЕ РАДИОБАТТОНОВ */
+
+.socks-form .color-choose {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.socks-form .color {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.socks-form .color .form-check-label {
+  font-size: 0px;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100px;
+  border: 1px solid #333;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.color-choose .form-check-input {
+  display: none;
+}
+
+.color-choose .form-check-input:checked + .form-check-label {
+  border: 1px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 0 2px 5px #2d6efd;
+}
+
+/* ИЗБРАННОЕ И КОРЗИНА  */
+
+.cart-container,
+.favorites-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.favorites-container .card-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 16px 16px;
+}
+
+.favorites-container .card-buttons button {
+  display: flex;
+}
+
+.favorites-container .card-buttons button span.text {
+  margin-left: 0.2rem;
+}
+
+.card {
+  position: relative;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.card-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.card .card-body .card-buttons > * {
+  position: absolute;
+  opacity: 0;
+  padding: 7px 9px 1px;
+  border: 0;
+  border-radius: 5px;
+  transition: all 0.25s;
+}
+
+.card .card-body .card-buttons .favorites-button {
+  top: 12px;
+  left: 12px;
+}
+
+.card .card-body .card-buttons .delete-button {
+  top: 12px;
+  right: 12px;
+}
+
+.card:hover .card-body .card-buttons > * {
+  opacity: .75;
+  transition: all 0.25s;
+}
+
+.delete-button .material-symbols-outlined {
+  font-size: 1.25rem;
+}
+
+/* .card-taken {
+  transform: translateX(1000px) translateY(-700px) scale(0.2);
+  transition: transform 0.5s;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  display: flex;
+} */
+
+.logo {
+  min-width: 30px;
+  min-height: 30px;
+}
+
+.btn {
+  min-width: 36px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* @media (max-width: 767px) {
+} */
+
+/* @media (min-width: 768px) and (max-width: 1400px) {
+} */
